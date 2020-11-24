@@ -1,0 +1,41 @@
+{
+  "name": "cordova.demo.l2cap",
+  "displayName": "L2CAP Cordova Demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cordova": "cordova"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peitschie/l2cap-cordova-demo.git"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Philip Peitsch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peitschie/l2cap-cordova-demo/issues"
+  },
+  "homepage": "https://github.com/peitschie/l2cap-cordova-demo#readme",
+  "devDependencies": {
+    "cordova": "^10.0.0",
+    "cordova-ios": "^6.1.1",
+    "cordova-plugin-ble-central": "git+https://github.com/peitschie/cordova-plugin-ble-central.git#l2cap",
+    "cordova-plugin-whitelist": "^1.3.4"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-ble-central": {
+        "BLUETOOTH_USAGE_DESCRIPTION": " "
+      }
+    },
+    "platforms": [
+      "ios"
+    ]
+  }
+}
